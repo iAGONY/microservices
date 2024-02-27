@@ -1,3 +1,4 @@
 ./gradle*
+.gradle/*
 api/build/*
 util/build/*
