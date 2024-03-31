@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.micro.productservice.MapperTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-31T06:14:05" hostname="suman-gajmer-f1soft" time="0.017">
-  <properties/>
-  <testcase name="mapperTests()" classname="com.micro.productservice.MapperTests" time="0.017"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

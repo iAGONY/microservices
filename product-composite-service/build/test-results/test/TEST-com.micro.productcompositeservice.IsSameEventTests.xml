@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.micro.productcompositeservice.IsSameEventTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-31T06:13:51" hostname="suman-gajmer-f1soft" time="0.176">
-  <properties/>
-  <testcase name="testEventObjectCompare()" classname="com.micro.productcompositeservice.IsSameEventTests" time="0.176"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
