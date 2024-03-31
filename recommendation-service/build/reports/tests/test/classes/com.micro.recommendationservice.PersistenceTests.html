@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PersistenceTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PersistenceTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.micro.recommendationservice.html">com.micro.recommendationservice</a> &gt; PersistenceTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.121s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">create()</td>
+<td class="success">0.051s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delete()</td>
+<td class="success">0.040s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">duplicateError()</td>
+<td class="success">0.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getByProductId()</td>
+<td class="success">0.879s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">optimisticLockError()</td>
+<td class="success">0.081s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">update()</td>
+<td class="success">0.042s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-03-31T11:59:25.766+05:45  INFO   --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.micro.recommendationservice.PersistenceTests]: PersistenceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-31T11:59:25.876+05:45  INFO   --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.micro.recommendationservice.RecommendationServiceApplication for test class com.micro.recommendationservice.PersistenceTests
+2024-03-31T11:59:25.918+05:45  INFO   --- [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2024-03-31T11:59:25.920+05:45  INFO   --- [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-03-31T11:59:26.062+05:45  INFO   --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-03-31T11:59:26.309+05:45  INFO   --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2024-03-31T11:59:26.311+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2024-03-31T11:59:26.333+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 24.0.5
+  API Version: 1.43
+  Operating System: Ubuntu Core 22
+  Total Memory: 14796 MB
+2024-03-31T11:59:26.388+05:45  INFO   --- [    Test worker] tc.testcontainers/ryuk:0.6.0             : Creating container for image: testcontainers/ryuk:0.6.0
+2024-03-31T11:59:26.503+05:45  INFO   --- [    Test worker] tc.testcontainers/ryuk:0.6.0             : Container testcontainers/ryuk:0.6.0 is starting: 5d2c611baa582681b4f9ec0e7984b77fd11c228a8ccff1f0b2bcd6e16bbd034b
+2024-03-31T11:59:26.951+05:45  INFO   --- [    Test worker] tc.testcontainers/ryuk:0.6.0             : Container testcontainers/ryuk:0.6.0 started in PT0.563563247S
+2024-03-31T11:59:26.958+05:45  INFO   --- [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-03-31T11:59:26.959+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2024-03-31T11:59:26.960+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2024-03-31T11:59:26.962+05:45  INFO   --- [    Test worker] tc.mongo:6.0.4                           : Creating container for image: mongo:6.0.4
+2024-03-31T11:59:26.994+05:45  INFO   --- [    Test worker] tc.mongo:6.0.4                           : Container mongo:6.0.4 is starting: a217b28e39633cd279ede0f63358385dc91706f91109165f991ceca978a79f21
+2024-03-31T11:59:28.109+05:45  INFO   --- [    Test worker] tc.mongo:6.0.4                           : Container mongo:6.0.4 started in PT1.147383863S
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-03-31T11:59:30.045+05:45  INFO 170853 --- [    Test worker] c.m.r.PersistenceTests                   : Starting PersistenceTests using Java 17.0.10 with PID 170853 (started by suman in /home/suman/Workspace/microservices/recommendation-service)
+2024-03-31T11:59:30.047+05:45  INFO 170853 --- [    Test worker] c.m.r.PersistenceTests                   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-03-31T11:59:30.473+05:45  INFO 170853 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2024-03-31T11:59:30.576+05:45  INFO 170853 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 1 Reactive MongoDB repository interface.
+2024-03-31T11:59:30.583+05:45  INFO 170853 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-03-31T11:59:30.585+05:45  INFO 170853 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 MongoDB repository interfaces.
+2024-03-31T11:59:30.948+05:45  INFO 170853 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {&quot;driver&quot;: {&quot;name&quot;: &quot;mongo-java-driver|reactive-streams|spring-boot&quot;, &quot;version&quot;: &quot;4.11.1&quot;}, &quot;os&quot;: {&quot;type&quot;: &quot;Linux&quot;, &quot;name&quot;: &quot;Linux&quot;, &quot;architecture&quot;: &quot;amd64&quot;, &quot;version&quot;: &quot;5.15.0-100-generic&quot;}, &quot;platform&quot;: &quot;Java/Private Build/17.0.10+7-Ubuntu-120.04.1&quot;} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@4aab7195, socketChannelClass=null, allocator=null, sslContext=null}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6210666c, com.mongodb.Jep395RecordCodecProvider@1dca62c2, com.mongodb.KotlinCodecProvider@52657d5f]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:32779], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-31T11:59:30.967+05:45  INFO 170853 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {&quot;driver&quot;: {&quot;name&quot;: &quot;mongo-java-driver|sync|spring-boot&quot;, &quot;version&quot;: &quot;4.11.1&quot;}, &quot;os&quot;: {&quot;type&quot;: &quot;Linux&quot;, &quot;name&quot;: &quot;Linux&quot;, &quot;architecture&quot;: &quot;amd64&quot;, &quot;version&quot;: &quot;5.15.0-100-generic&quot;}, &quot;platform&quot;: &quot;Java/Private Build/17.0.10+7-Ubuntu-120.04.1&quot;} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@214fba74, socketChannelClass=null, allocator=null, sslContext=null}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6210666c, com.mongodb.Jep395RecordCodecProvider@1dca62c2, com.mongodb.KotlinCodecProvider@52657d5f]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:32779], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-31T11:59:31.087+05:45  INFO 170853 --- [localhost:32779] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:32779, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=84019952, setName='docker-rs', canonicalAddress=a217b28e3963:27017, hosts=[a217b28e3963:27017], passives=[], arbiters=[], primary='a217b28e3963:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=6608ff43a1b301829648de0f, counter=6}, lastWriteDate=Sun Mar 31 11:59:28 NPT 2024, lastUpdateTimeNanos=46367570147449}
+2024-03-31T11:59:31.087+05:45  INFO 170853 --- [localhost:32779] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:32779, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=84058085, setName='docker-rs', canonicalAddress=a217b28e3963:27017, hosts=[a217b28e3963:27017], passives=[], arbiters=[], primary='a217b28e3963:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=6608ff43a1b301829648de0f, counter=6}, lastWriteDate=Sun Mar 31 11:59:28 NPT 2024, lastUpdateTimeNanos=46367570147449}
+2024-03-31T11:59:31.525+05:45  INFO 170853 --- [    Test worker] c.m.r.PersistenceTests                   : Started PersistenceTests in 1.821 seconds (process running for 6.712)
+2024-03-31T11:59:32.216+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: recommendations.
+2024-03-31T11:59:32.282+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendations
+2024-03-31T11:59:32.349+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : find using query: { &quot;productId&quot; : 1} fields: Document{{}} for class: class com.micro.recommendationservice.persistenece.RecommendationEntity in collection: recommendations
+2024-03-31T11:59:32.420+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: recommendations.
+2024-03-31T11:59:32.426+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendations
+2024-03-31T11:59:32.436+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : findOne using query: { &quot;id&quot; : &quot;6608ff4853cf30104ffb91a8&quot;} fields: Document{{}} for class: class com.micro.recommendationservice.persistenece.RecommendationEntity in collection: recommendations
+2024-03-31T11:59:32.449+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : findOne using query: { &quot;id&quot; : &quot;6608ff4853cf30104ffb91a8&quot;} fields: Document{{}} for class: class com.micro.recommendationservice.persistenece.RecommendationEntity in collection: recommendations
+2024-03-31T11:59:32.468+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Calling update using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;6608ff4853cf30104ffb91a8&quot;}, &quot;version&quot; : 0} and update: { &quot;version&quot; : 1, &quot;productId&quot; : 1, &quot;recommendationId&quot; : 2, &quot;author&quot; : &quot;a1&quot;, &quot;rating&quot; : 3, &quot;content&quot; : &quot;c&quot;, &quot;_class&quot; : &quot;com.micro.recommendationservice.persistenece.RecommendationEntity&quot;} in collection: recommendations
+2024-03-31T11:59:32.483+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Calling update using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;6608ff4853cf30104ffb91a8&quot;}, &quot;version&quot; : 0} and update: { &quot;version&quot; : 1, &quot;productId&quot; : 1, &quot;recommendationId&quot; : 2, &quot;author&quot; : &quot;a2&quot;, &quot;rating&quot; : 3, &quot;content&quot; : &quot;c&quot;, &quot;_class&quot; : &quot;com.micro.recommendationservice.persistenece.RecommendationEntity&quot;} in collection: recommendations
+2024-03-31T11:59:32.491+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : findOne using query: { &quot;id&quot; : &quot;6608ff4853cf30104ffb91a8&quot;} fields: Document{{}} for class: class com.micro.recommendationservice.persistenece.RecommendationEntity in collection: recommendations
+2024-03-31T11:59:32.507+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: recommendations.
+2024-03-31T11:59:32.514+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendations
+2024-03-31T11:59:32.523+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendations
+2024-03-31T11:59:32.531+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : findOne using query: { &quot;id&quot; : &quot;6608ff4853cf30104ffb91aa&quot;} fields: Document{{}} for class: class com.micro.recommendationservice.persistenece.RecommendationEntity in collection: recommendations
+2024-03-31T11:59:32.539+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Executing count: {} in collection: recommendations
+2024-03-31T11:59:32.539+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Executing count: {} in collection: recommendations
+2024-03-31T11:59:32.558+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: recommendations.
+2024-03-31T11:59:32.565+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendations
+2024-03-31T11:59:32.577+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;6608ff4853cf30104ffb91ab&quot;}, &quot;version&quot; : 0} in collection: recommendations.
+2024-03-31T11:59:32.587+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : exists: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;6608ff4853cf30104ffb91ab&quot;}} in collection: recommendations
+2024-03-31T11:59:32.601+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: recommendations.
+2024-03-31T11:59:32.607+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendations
+2024-03-31T11:59:32.617+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Calling update using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;6608ff4853cf30104ffb91ac&quot;}, &quot;version&quot; : 0} and update: { &quot;version&quot; : 1, &quot;productId&quot; : 1, &quot;recommendationId&quot; : 2, &quot;author&quot; : &quot;a2&quot;, &quot;rating&quot; : 3, &quot;content&quot; : &quot;c&quot;, &quot;_class&quot; : &quot;com.micro.recommendationservice.persistenece.RecommendationEntity&quot;} in collection: recommendations
+2024-03-31T11:59:32.630+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : findOne using query: { &quot;id&quot; : &quot;6608ff4853cf30104ffb91ac&quot;} fields: Document{{}} for class: class com.micro.recommendationservice.persistenece.RecommendationEntity in collection: recommendations
+2024-03-31T11:59:32.644+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: recommendations.
+2024-03-31T11:59:32.651+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendations
+2024-03-31T11:59:32.659+05:45 DEBUG 170853 --- [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendations
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Mar 31, 2024, 11:59:43 AM</p>
+</div>
+</div>
+</body>
+</html>

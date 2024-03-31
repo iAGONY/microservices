@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.micro.reviewservice.PersistenceTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-03-31T06:15:01" hostname="suman-gajmer-f1soft" time="1.179">
+  <properties/>
+  <testcase name="getByProductId()" classname="com.micro.reviewservice.PersistenceTests" time="0.684"/>
+  <testcase name="optimisticLockError()" classname="com.micro.reviewservice.PersistenceTests" time="0.108"/>
+  <testcase name="create()" classname="com.micro.reviewservice.PersistenceTests" time="0.215"/>
+  <testcase name="delete()" classname="com.micro.reviewservice.PersistenceTests" time="0.079"/>
+  <testcase name="update()" classname="com.micro.reviewservice.PersistenceTests" time="0.041"/>
+  <testcase name="duplicateError()" classname="com.micro.reviewservice.PersistenceTests" time="0.034"/>
+  <system-out><![CDATA[2024-03-31T11:59:45.872+05:45  INFO   --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.micro.reviewservice.PersistenceTests]: PersistenceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-31T11:59:45.993+05:45  INFO   --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.micro.reviewservice.ReviewServiceApplication for test class com.micro.reviewservice.PersistenceTests
+2024-03-31T11:59:46.057+05:45  INFO   --- [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2024-03-31T11:59:46.060+05:45  INFO   --- [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-03-31T11:59:46.208+05:45  INFO   --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-03-31T11:59:46.458+05:45  INFO   --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2024-03-31T11:59:46.459+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2024-03-31T11:59:46.484+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 24.0.5
+  API Version: 1.43
+  Operating System: Ubuntu Core 22
+  Total Memory: 14796 MB
+2024-03-31T11:59:46.543+05:45  INFO   --- [    Test worker] tc.testcontainers/ryuk:0.6.0             : Creating container for image: testcontainers/ryuk:0.6.0
+2024-03-31T11:59:46.657+05:45  INFO   --- [    Test worker] tc.testcontainers/ryuk:0.6.0             : Container testcontainers/ryuk:0.6.0 is starting: c438f93d8451449c49a3f29a57f713785acd1107f1f952c8fa8b1cdc673be20b
+2024-03-31T11:59:47.083+05:45  INFO   --- [    Test worker] tc.testcontainers/ryuk:0.6.0             : Container testcontainers/ryuk:0.6.0 started in PT0.53982596S
+2024-03-31T11:59:47.092+05:45  INFO   --- [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-03-31T11:59:47.092+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2024-03-31T11:59:47.093+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2024-03-31T11:59:47.098+05:45  INFO   --- [    Test worker] tc.mysql:8.0.32                          : Creating container for image: mysql:8.0.32
+2024-03-31T11:59:47.194+05:45  INFO   --- [    Test worker] tc.mysql:8.0.32                          : Container mysql:8.0.32 is starting: ed5a18c6fb0f6b8bce3492d24a38e696107e9602da4ab8779173c27f50aa7cda
+2024-03-31T11:59:47.534+05:45  INFO   --- [    Test worker] tc.mysql:8.0.32                          : Waiting for database connection to become available at jdbc:mysql://localhost:32781/test using query 'SELECT 1'
+2024-03-31T11:59:58.984+05:45  INFO   --- [    Test worker] tc.mysql:8.0.32                          : Container mysql:8.0.32 started in PT11.88613525S
+2024-03-31T11:59:58.984+05:45  INFO   --- [    Test worker] tc.mysql:8.0.32                          : Container is started (JDBC URL: jdbc:mysql://localhost:32781/test)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-03-31T11:59:59.373+05:45  INFO 171551 --- [    Test worker] c.micro.reviewservice.PersistenceTests   : Starting PersistenceTests using Java 17.0.10 with PID 171551 (started by suman in /home/suman/Workspace/microservices/review-service)
+2024-03-31T11:59:59.374+05:45  INFO 171551 --- [    Test worker] c.micro.reviewservice.PersistenceTests   : No active profile set, falling back to 1 default profile: "default"
+2024-03-31T11:59:59.767+05:45  INFO 171551 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-31T11:59:59.906+05:45  INFO 171551 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 1 JPA repository interface.
+2024-03-31T12:00:00.258+05:45  INFO 171551 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-31T12:00:00.311+05:45  INFO 171551 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-31T12:00:00.337+05:45  INFO 171551 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-31T12:00:00.513+05:45  INFO 171551 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-31T12:00:00.540+05:45  INFO 171551 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-31T12:00:00.698+05:45  INFO 171551 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e23ba17
+2024-03-31T12:00:00.701+05:45  INFO 171551 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-31T12:00:01.426+05:45  INFO 171551 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-31T12:00:01.474+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : create table reviews (id integer not null, author varchar(255), content varchar(255), product_id integer not null, review_id integer not null, subject varchar(255), version integer not null, primary key (id)) engine=InnoDB
+Hibernate: create table reviews (id integer not null, author varchar(255), content varchar(255), product_id integer not null, review_id integer not null, subject varchar(255), version integer not null, primary key (id)) engine=InnoDB
+2024-03-31T12:00:01.496+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : create table reviews_seq (next_val bigint) engine=InnoDB
+Hibernate: create table reviews_seq (next_val bigint) engine=InnoDB
+2024-03-31T12:00:01.517+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : insert into reviews_seq values ( 1 )
+Hibernate: insert into reviews_seq values ( 1 )
+2024-03-31T12:00:01.531+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : alter table reviews drop index reviews_unique_idx
+Hibernate: alter table reviews drop index reviews_unique_idx
+2024-03-31T12:00:01.544+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : alter table reviews add constraint reviews_unique_idx unique (product_id, review_id)
+Hibernate: alter table reviews add constraint reviews_unique_idx unique (product_id, review_id)
+2024-03-31T12:00:01.567+05:45  INFO 171551 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-31T12:00:01.580+05:45  INFO 171551 --- [    Test worker] c.m.r.ReviewServiceApplication           : Creates a jdbcScheduler with thread pool size = 10
+2024-03-31T12:00:01.913+05:45  INFO 171551 --- [    Test worker] c.micro.reviewservice.PersistenceTests   : Started PersistenceTests in 2.888 seconds (process running for 17.068)
+2024-03-31T12:00:02.478+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+2024-03-31T12:00:02.498+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select next_val as id_val from reviews_seq for update
+Hibernate: select next_val as id_val from reviews_seq for update
+2024-03-31T12:00:02.501+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : update reviews_seq set next_val= ? where next_val=?
+Hibernate: update reviews_seq set next_val= ? where next_val=?
+2024-03-31T12:00:02.548+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+Hibernate: insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+2024-03-31T12:00:02.585+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.product_id=?
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.product_id=?
+2024-03-31T12:00:02.615+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+2024-03-31T12:00:02.628+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+Hibernate: delete from reviews where id=? and version=?
+2024-03-31T12:00:02.638+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select next_val as id_val from reviews_seq for update
+Hibernate: select next_val as id_val from reviews_seq for update
+2024-03-31T12:00:02.640+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : update reviews_seq set next_val= ? where next_val=?
+Hibernate: update reviews_seq set next_val= ? where next_val=?
+2024-03-31T12:00:02.646+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+Hibernate: insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+2024-03-31T12:00:02.659+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+2024-03-31T12:00:02.667+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+2024-03-31T12:00:02.677+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+2024-03-31T12:00:02.688+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : update reviews set author=?,content=?,product_id=?,review_id=?,subject=?,version=? where id=? and version=?
+Hibernate: update reviews set author=?,content=?,product_id=?,review_id=?,subject=?,version=? where id=? and version=?
+2024-03-31T12:00:02.698+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+2024-03-31T12:00:02.713+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+2024-03-31T12:00:02.723+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+2024-03-31T12:00:02.726+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+Hibernate: delete from reviews where id=? and version=?
+2024-03-31T12:00:02.732+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+Hibernate: insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+2024-03-31T12:00:02.740+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+Hibernate: insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+2024-03-31T12:00:02.750+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+2024-03-31T12:00:02.927+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select count(*) from reviews re1_0
+Hibernate: select count(*) from reviews re1_0
+2024-03-31T12:00:02.944+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+2024-03-31T12:00:02.948+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+Hibernate: delete from reviews where id=? and version=?
+2024-03-31T12:00:02.949+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+Hibernate: delete from reviews where id=? and version=?
+2024-03-31T12:00:02.961+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+Hibernate: insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+2024-03-31T12:00:02.969+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+2024-03-31T12:00:02.972+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+Hibernate: delete from reviews where id=? and version=?
+2024-03-31T12:00:03.011+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select count(*) from reviews re1_0 where re1_0.id=?
+Hibernate: select count(*) from reviews re1_0 where re1_0.id=?
+2024-03-31T12:00:03.029+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+2024-03-31T12:00:03.038+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+Hibernate: insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+2024-03-31T12:00:03.046+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+2024-03-31T12:00:03.050+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : update reviews set author=?,content=?,product_id=?,review_id=?,subject=?,version=? where id=? and version=?
+Hibernate: update reviews set author=?,content=?,product_id=?,review_id=?,subject=?,version=? where id=? and version=?
+2024-03-31T12:00:03.059+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0 where re1_0.id=?
+2024-03-31T12:00:03.072+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+Hibernate: select re1_0.id,re1_0.author,re1_0.content,re1_0.product_id,re1_0.review_id,re1_0.subject,re1_0.version from reviews re1_0
+2024-03-31T12:00:03.075+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+Hibernate: delete from reviews where id=? and version=?
+2024-03-31T12:00:03.082+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+Hibernate: insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+2024-03-31T12:00:03.092+05:45 DEBUG 171551 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+Hibernate: insert into reviews (author,content,product_id,review_id,subject,version,id) values (?,?,?,?,?,?,?)
+2024-03-31T12:00:03.097+05:45  WARN 171551 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-03-31T12:00:03.098+05:45 ERROR 171551 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '1-2' for key 'reviews.reviews_unique_idx'
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
