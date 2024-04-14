@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.micro.ReactorTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-04-14T08:57:25" hostname="suman-gajmer" time="0.194">
+  <properties/>
+  <testcase name="testFlux()" classname="com.micro.ReactorTests" time="0.125"/>
+  <testcase name="testFluxBlocking()" classname="com.micro.ReactorTests" time="0.067"/>
+  <system-out><![CDATA[14:42:25.508 [Test worker] INFO reactor.Flux.MapFuseable.2 -- | onSubscribe([Fuseable] FluxMapFuseable.MapFuseableSubscriber)
+14:42:25.512 [Test worker] INFO reactor.Flux.MapFuseable.2 -- | request(unbounded)
+14:42:25.513 [Test worker] INFO reactor.Flux.MapFuseable.2 -- | onNext(4)
+14:42:25.513 [Test worker] INFO reactor.Flux.MapFuseable.2 -- | onNext(8)
+14:42:25.514 [Test worker] INFO reactor.Flux.MapFuseable.2 -- | onComplete()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

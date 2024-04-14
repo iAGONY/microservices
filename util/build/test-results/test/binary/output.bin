@@ -1,0 +1,5 @@
+~14:42:25.508 [Test worker] INFO reactor.Flux.MapFuseable.2 -- | onSubscribe([Fuseable] FluxMapFuseable.MapFuseableSubscriber)
+S14:42:25.512 [Test worker] INFO reactor.Flux.MapFuseable.2 -- | request(unbounded)
+J14:42:25.513 [Test worker] INFO reactor.Flux.MapFuseable.2 -- | onNext(4)
+J14:42:25.513 [Test worker] INFO reactor.Flux.MapFuseable.2 -- | onNext(8)
+M14:42:25.514 [Test worker] INFO reactor.Flux.MapFuseable.2 -- | onComplete()

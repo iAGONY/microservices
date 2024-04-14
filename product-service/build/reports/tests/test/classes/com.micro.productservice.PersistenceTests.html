@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PersistenceTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PersistenceTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.micro.productservice.html">com.micro.productservice</a> &gt; PersistenceTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.967s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">create()</td>
+<td class="success">0.044s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delete()</td>
+<td class="success">0.033s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">duplicateError()</td>
+<td class="success">0.020s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getByProductId()</td>
+<td class="success">0.779s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">optimisticLockError()</td>
+<td class="success">0.062s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">update()</td>
+<td class="success">0.029s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-04-14T14:41:24.787+05:45  INFO   --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.micro.productservice.PersistenceTests]: PersistenceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-14T14:41:24.897+05:45  INFO   --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.micro.productservice.ProductServiceApplication for test class com.micro.productservice.PersistenceTests
+2024-04-14T14:41:24.954+05:45  INFO   --- [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2024-04-14T14:41:24.957+05:45  INFO   --- [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-04-14T14:41:25.064+05:45  INFO   --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-04-14T14:41:25.364+05:45  INFO   --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2024-04-14T14:41:25.366+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2024-04-14T14:41:25.381+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 26.0.0
+  API Version: 1.45
+  Operating System: Ubuntu 22.04.2 LTS
+  Total Memory: 14808 MB
+2024-04-14T14:41:25.405+05:45  INFO   --- [    Test worker] tc.testcontainers/ryuk:0.6.0             : Creating container for image: testcontainers/ryuk:0.6.0
+2024-04-14T14:41:25.411+05:45  INFO   --- [    Test worker] o.t.utility.RegistryAuthLocator          : Failure when attempting to lookup auth config. Please ignore if you don't have images in an authenticated registry. Details: (dockerImageName: testcontainers/ryuk:0.6.0, configFile: /home/suman/.docker/config.json, configEnv: DOCKER_AUTH_CONFIG). Falling back to docker-java default behaviour. Exception message: Status 404: No config supplied. Checked in order: /home/suman/.docker/config.json (file not found), DOCKER_AUTH_CONFIG (not set)
+2024-04-14T14:41:25.734+05:45  INFO   --- [    Test worker] tc.testcontainers/ryuk:0.6.0             : Container testcontainers/ryuk:0.6.0 is starting: c42ad5434f5818768a78d637334a36f0fc7bf43672c7b2eb78216dfb70f70828
+2024-04-14T14:41:26.058+05:45  INFO   --- [    Test worker] tc.testcontainers/ryuk:0.6.0             : Container testcontainers/ryuk:0.6.0 started in PT0.653194451S
+2024-04-14T14:41:26.064+05:45  INFO   --- [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-04-14T14:41:26.064+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2024-04-14T14:41:26.065+05:45  INFO   --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2024-04-14T14:41:26.065+05:45  INFO   --- [    Test worker] tc.mongo:6.0.4                           : Creating container for image: mongo:6.0.4
+2024-04-14T14:41:26.106+05:45  INFO   --- [    Test worker] tc.mongo:6.0.4                           : Container mongo:6.0.4 is starting: 16f0593c4ab64925cab049b966dfdfa5af10caf09d7ae4c6e2f798252ff96ffe
+2024-04-14T14:41:26.785+05:45  INFO   --- [    Test worker] tc.mongo:6.0.4                           : Container mongo:6.0.4 started in PT0.719373158S
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-04-14T14:41:28.621+05:45  INFO 512202 --- [product] [    Test worker] c.micro.productservice.PersistenceTests  : Starting PersistenceTests using Java 17.0.10 with PID 512202 (started by suman in /home/suman/Workspace/microservices/product-service)
+2024-04-14T14:41:28.622+05:45  INFO 512202 --- [product] [    Test worker] c.micro.productservice.PersistenceTests  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-04-14T14:41:29.029+05:45  INFO 512202 --- [product] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2024-04-14T14:41:29.144+05:45  INFO 512202 --- [product] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 1 Reactive MongoDB repository interface.
+2024-04-14T14:41:29.152+05:45  INFO 512202 --- [product] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-14T14:41:29.155+05:45  INFO 512202 --- [product] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 MongoDB repository interfaces.
+2024-04-14T14:41:29.531+05:45  INFO 512202 --- [product] [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {&quot;driver&quot;: {&quot;name&quot;: &quot;mongo-java-driver|reactive-streams|spring-boot&quot;, &quot;version&quot;: &quot;4.11.1&quot;}, &quot;os&quot;: {&quot;type&quot;: &quot;Linux&quot;, &quot;name&quot;: &quot;Linux&quot;, &quot;architecture&quot;: &quot;amd64&quot;, &quot;version&quot;: &quot;5.19.0-32-generic&quot;}, &quot;platform&quot;: &quot;Java/Oracle Corporation/17.0.10+11-LTS-240&quot;} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@100807ca, socketChannelClass=null, allocator=null, sslContext=null}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@c67395, com.mongodb.Jep395RecordCodecProvider@5fc7255c, com.mongodb.KotlinCodecProvider@20a47036]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:32843], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-04-14T14:41:29.552+05:45  INFO 512202 --- [product] [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {&quot;driver&quot;: {&quot;name&quot;: &quot;mongo-java-driver|sync|spring-boot&quot;, &quot;version&quot;: &quot;4.11.1&quot;}, &quot;os&quot;: {&quot;type&quot;: &quot;Linux&quot;, &quot;name&quot;: &quot;Linux&quot;, &quot;architecture&quot;: &quot;amd64&quot;, &quot;version&quot;: &quot;5.19.0-32-generic&quot;}, &quot;platform&quot;: &quot;Java/Oracle Corporation/17.0.10+11-LTS-240&quot;} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@21a9f95b, socketChannelClass=null, allocator=null, sslContext=null}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@c67395, com.mongodb.Jep395RecordCodecProvider@5fc7255c, com.mongodb.KotlinCodecProvider@20a47036]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:32843], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-04-14T14:41:29.663+05:45  INFO 512202 --- [product] [localhost:32843] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:32843, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=69140366, setName='docker-rs', canonicalAddress=16f0593c4ab6:27017, hosts=[16f0593c4ab6:27017], passives=[], arbiters=[], primary='16f0593c4ab6:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=661b9a3ae9c0725f7a5a6d20, counter=6}, lastWriteDate=Sun Apr 14 14:41:27 NPT 2024, lastUpdateTimeNanos=75211989595847}
+2024-04-14T14:41:29.663+05:45  INFO 512202 --- [product] [localhost:32843] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:32843, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=69576030, setName='docker-rs', canonicalAddress=16f0593c4ab6:27017, hosts=[16f0593c4ab6:27017], passives=[], arbiters=[], primary='16f0593c4ab6:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=661b9a3ae9c0725f7a5a6d20, counter=6}, lastWriteDate=Sun Apr 14 14:41:27 NPT 2024, lastUpdateTimeNanos=75211989596659}
+2024-04-14T14:41:30.088+05:45  INFO 512202 --- [product] [    Test worker] c.micro.productservice.PersistenceTests  : Started PersistenceTests in 1.831 seconds (process running for 6.214)
+2024-04-14T14:41:30.717+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: products.
+2024-04-14T14:41:30.793+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, name, weight, _class] in collection: products
+2024-04-14T14:41:30.826+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : find using query: { &quot;productId&quot; : 1} fields: Document{{}} for class: class com.micro.productservice.product.persistence.ProductEntity in collection: products
+2024-04-14T14:41:30.881+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: products.
+2024-04-14T14:41:30.886+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, name, weight, _class] in collection: products
+2024-04-14T14:41:30.894+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : findOne using query: { &quot;id&quot; : &quot;661b9a3e84b1c16111c9ad72&quot;} fields: Document{{}} for class: class com.micro.productservice.product.persistence.ProductEntity in collection: products
+2024-04-14T14:41:30.903+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : findOne using query: { &quot;id&quot; : &quot;661b9a3e84b1c16111c9ad72&quot;} fields: Document{{}} for class: class com.micro.productservice.product.persistence.ProductEntity in collection: products
+2024-04-14T14:41:30.917+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Calling update using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;661b9a3e84b1c16111c9ad72&quot;}, &quot;version&quot; : 0} and update: { &quot;version&quot; : 1, &quot;productId&quot; : 1, &quot;name&quot; : &quot;n1&quot;, &quot;weight&quot; : 1, &quot;_class&quot; : &quot;com.micro.productservice.product.persistence.ProductEntity&quot;} in collection: products
+2024-04-14T14:41:30.928+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Calling update using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;661b9a3e84b1c16111c9ad72&quot;}, &quot;version&quot; : 0} and update: { &quot;version&quot; : 1, &quot;productId&quot; : 1, &quot;name&quot; : &quot;n&quot;, &quot;weight&quot; : 1, &quot;_class&quot; : &quot;com.micro.productservice.product.persistence.ProductEntity&quot;} in collection: products
+2024-04-14T14:41:30.935+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : findOne using query: { &quot;id&quot; : &quot;661b9a3e84b1c16111c9ad72&quot;} fields: Document{{}} for class: class com.micro.productservice.product.persistence.ProductEntity in collection: products
+2024-04-14T14:41:30.944+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: products.
+2024-04-14T14:41:30.949+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, name, weight, _class] in collection: products
+2024-04-14T14:41:30.958+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, name, weight, _class] in collection: products
+2024-04-14T14:41:30.963+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : findOne using query: { &quot;id&quot; : &quot;661b9a3e84b1c16111c9ad74&quot;} fields: Document{{}} for class: class com.micro.productservice.product.persistence.ProductEntity in collection: products
+2024-04-14T14:41:30.970+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Executing count: {} in collection: products
+2024-04-14T14:41:30.971+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Executing count: {} in collection: products
+2024-04-14T14:41:30.990+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: products.
+2024-04-14T14:41:30.995+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, name, weight, _class] in collection: products
+2024-04-14T14:41:31.004+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;661b9a3e84b1c16111c9ad75&quot;}, &quot;version&quot; : 0} in collection: products.
+2024-04-14T14:41:31.015+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : exists: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;661b9a3e84b1c16111c9ad75&quot;}} in collection: products
+2024-04-14T14:41:31.024+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: products.
+2024-04-14T14:41:31.030+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, name, weight, _class] in collection: products
+2024-04-14T14:41:31.039+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Calling update using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;661b9a3f84b1c16111c9ad76&quot;}, &quot;version&quot; : 0} and update: { &quot;version&quot; : 1, &quot;productId&quot; : 1, &quot;name&quot; : &quot;n2&quot;, &quot;weight&quot; : 1, &quot;_class&quot; : &quot;com.micro.productservice.product.persistence.ProductEntity&quot;} in collection: products
+2024-04-14T14:41:31.044+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : findOne using query: { &quot;id&quot; : &quot;661b9a3f84b1c16111c9ad76&quot;} fields: Document{{}} for class: class com.micro.productservice.product.persistence.ProductEntity in collection: products
+2024-04-14T14:41:31.054+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Remove using query: {} in collection: products.
+2024-04-14T14:41:31.059+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, name, weight, _class] in collection: products
+2024-04-14T14:41:31.066+05:45 DEBUG 512202 --- [product] [    Test worker] o.s.d.m.core.ReactiveMongoTemplate       : Inserting Document containing fields: [version, productId, name, weight, _class] in collection: products
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Apr 14, 2024, 2:41:41 PM</p>
+</div>
+</div>
+</body>
+</html>
