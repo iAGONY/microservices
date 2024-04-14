@@ -36,8 +36,10 @@ import org.springframework.messaging.Message;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
 @SpringBootTest(
-        webEnvironment = RANDOM_PORT,
-        properties = {"spring.main.allow-bean-definition-overriding=true"})
+        webEnvironment = RANDOM_PORT, properties = {
+        "spring.main.allow-bean-definition-overriding=true",
+        "eureka.client.enabled=false"})
+
 @Import({TestChannelBinderConfiguration.class})
 class MessagingTests {
 
